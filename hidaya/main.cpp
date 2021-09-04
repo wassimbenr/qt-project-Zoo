@@ -3,7 +3,6 @@
 #include <QFile>
 #include <QTranslator>
 #include <QInputDialog>
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

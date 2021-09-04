@@ -1,0 +1,12 @@
+INPUT(
+./release\animal.o
+./release\cage.o
+./release\database.o
+./release\main.o
+./release\mainwindow.o
+./release\smtp.o
+./release\qrc_ressources.o
+./release\qrc_traduction.o
+./release\moc_mainwindow.o
+./release\moc_smtp.o
+);

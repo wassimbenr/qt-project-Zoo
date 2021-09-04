@@ -254,13 +254,6 @@
           <item>
            <widget class="QLineEdit" name="lineEdit_rechercher"/>
           </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_rechercher">
-            <property name="text">
-             <string>Rechercher</string>
-            </property>
-           </widget>
-          </item>
          </layout>
         </item>
         <item>
@@ -272,6 +265,13 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="pushButton_PDFa">
+            <property name="text">
+             <string>PDF</string>
+            </property>
+           </widget>
+          </item>
           <item>
            <spacer name="horizontalSpacer_3">
             <property name="orientation">
@@ -289,6 +289,9 @@
            <widget class="QPushButton" name="pushButton_modifier">
             <property name="text">
              <string>Modifier</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -460,6 +463,13 @@
            </widget>
           </item>
           <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>Trier</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <spacer name="horizontalSpacer_5">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -473,14 +483,14 @@
            </spacer>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton">
+           <widget class="QRadioButton" name="radioButton_capacite">
             <property name="text">
-             <string>Numero</string>
+             <string>Capacite</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_2">
+           <widget class="QRadioButton" name="radioButton_type">
             <property name="text">
              <string>Type</string>
             </property>
@@ -491,23 +501,19 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
-           <widget class="QTableView" name="tableView_2"/>
+           <widget class="QTableView" name="tableView_cage"/>
           </item>
          </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_10">
           <item>
-           <widget class="QPushButton" name="pushButton_PDF">
-            <property name="text">
-             <string>PDF</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QPushButton" name="pushButton_modifierC">
             <property name="text">
              <string>Modifier</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
