@@ -254,6 +254,47 @@
           <item>
            <widget class="QLineEdit" name="lineEdit_rechercher"/>
           </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_tri">
+            <property name="text">
+             <string>Tri</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_tri">
+            <item>
+             <property name="text">
+              <string>ID_ANIMAL</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>NOM_ANIMAL</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>SEXE_ANIMAL</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>DATE_NAISSANCE</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>DATE_DECES</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ID_CAGE</string>
+             </property>
+            </item>
+           </widget>
+          </item>
          </layout>
         </item>
         <item>
@@ -416,16 +457,16 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="verticalLayoutWidget_3">
+      <widget class="QWidget" name="gridLayoutWidget_2">
        <property name="geometry">
         <rect>
-         <x>-1</x>
+         <x>0</x>
          <y>179</y>
          <width>351</width>
-         <height>341</height>
+         <height>331</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_stat"/>
+       <layout class="QGridLayout" name="gridLayout_2"/>
       </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_4">
@@ -544,6 +585,50 @@
         </item>
        </layout>
       </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Fournisseur</string>
+     </attribute>
+     <widget class="QWidget" name="formLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>651</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Sujet</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_subject"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Contenu</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QTextEdit" name="textEdit"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButton_mail">
+         <property name="text">
+          <string>Envoyer mail</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </widget>

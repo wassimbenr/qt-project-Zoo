@@ -16,6 +16,7 @@
 #include <QSortFilterProxyModel>
 #include <QTextDocument>
 #include<QMediaPlayer>
+#include <QGraphicsItem>
 #include<QSqlRecord>
 #include<QtCharts> //stat
 #include<QChartView> //stat
@@ -61,6 +62,12 @@ private slots:
     void on_pushButton_PDFa_clicked();
 
     void on_pushButton_annuler_clicked();
+
+    void on_pushButton_mail_clicked();
+
+    void on_pushButton_tri_clicked();
+
+    void updatestat();
 
 private:
     Ui::MainWindow *ui;

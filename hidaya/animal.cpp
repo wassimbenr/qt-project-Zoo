@@ -52,3 +52,15 @@ QSqlQueryModel * animal::rechercher(QString r)
     model->setQuery("select * from ANIMAL where upper(ID_ANIMAL) like upper('%"+r+"%') or upper(NOM_ANIMAL) like upper('%"+r+"%') or upper(SEXE_ANIMAL) like upper('%"+r+"%') or upper(DATE_NAISSANCE) like upper('%"+r+"%') or upper(DATE_DECES) like upper('%"+r+"%') or upper(ID_CAGE) like upper('%"+r+"%')");
     return model;
 }
+QSqlQueryModel * animal::tri(QString selon)
+{
+    QSqlQueryModel * model = new QSqlQueryModel();
+    model->setQuery("SELECT * FROM animal order by "+selon+"");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID_ANIMAL"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM_ANIMAL"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("SEXE_ANIMAL"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("DATE_NAISSANCE"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("DATE_DECES"));
+    model->setHeaderData(5,Qt::Horizontal,QObject::tr("ID_CAGE"));
+    return model;
+}

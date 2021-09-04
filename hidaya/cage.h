@@ -5,6 +5,10 @@
 #include <QSqlQuery>
 #include <QSqlQueryModel>
 #include <QVariant>
+#include<QtCharts> //stat
+#include<QChartView> //stat
+#include<QPieSeries> //stat
+#include<QPieSlice> //stat
 
 class cage
 {
@@ -23,6 +27,7 @@ public:
     QSqlQueryModel *recherche(QString);
     QSqlQueryModel *chercher_emp(const QString &aux);
     QSqlQueryModel *chercher_emp2(const QString &aux);
+    QChartView * stats();
 private:
     QString id;
     QString type;

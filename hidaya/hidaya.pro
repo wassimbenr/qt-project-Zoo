@@ -46,4 +46,5 @@ RESOURCES += \
 DISTFILES += \
     Click.wav \
     english.ts \
-    francais.ts
+    francais.ts \
+    mail.png

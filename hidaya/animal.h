@@ -17,6 +17,7 @@ public:
     QSqlQueryModel *afficher();
     bool supprimer(QString);
     QSqlQueryModel *rechercher(QString r);
+    QSqlQueryModel *tri(QString selon);
 };
 
 #endif // ANIMAL_H
